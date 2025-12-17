@@ -20,33 +20,31 @@ The API enforces data integrity using foreign key constraints and supports casca
 ---
 
 ##  Project Structure
-
 blog-api/
-│── src/
-│ ├── controllers/
-│ │ ├── authorController.js
-│ │ └── postController.js
-│ │
-│ ├── routes/
-│ │ ├── authorRoutes.js
-│ │ └── postRoutes.js
-│ │
-│ ├── models/
-│ │ ├── Author.js
-│ │ └── Post.js
-│ │
-│ ├── config/
-│ │ └── database.js
-│ │
-│ └── app.js
 │
-│── .env
-│── package.json
-│── README.md
+├── src/
+│   ├── controllers/
+│   │   ├── authorController.js
+│   │   └── postController.js
+│   │
+│   ├── routes/
+│   │   ├── authorRoutes.js
+│   │   └── postRoutes.js
+│   │
+│   ├── models/
+│   │   ├── Author.js
+│   │   └── Post.js
+│   │
+│   ├── config/
+│   │   └── database.js
+│   │
+│   └── app.js
+│
+├── .gitignore   
+├── .env         
+├── package.json
+└── README.md
 
-
-
----
 
 ##  Setup Instructions
 
@@ -87,7 +85,7 @@ Server running on http://localhost:3000
 
 ## API Endpoints Documentation
 
-🔹 Author Endpoints
+### Author Endpoints:
 ### 1.Create Author
 
 ```
@@ -129,7 +127,7 @@ DELETE /authors/{id}
 
 Deleting an author automatically deletes all associated posts.
 
-🔹 Post Endpoints
+### Post Endpoints:
 
 ### 1.Create Post
 ```
@@ -172,7 +170,7 @@ GET /posts/{id}
 ```
 DELETE /posts/{id}
 ```
-🔹 Nested Resource Endpoint
+### Nested Resource Endpoint:
 ##  1.Get all posts of a specific author
 ```
 GET /authors/{id}/posts
