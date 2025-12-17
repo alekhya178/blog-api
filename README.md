@@ -20,6 +20,7 @@ The API enforces data integrity using foreign key constraints and supports casca
 ---
 
 ##  Project Structure
+``` text
 blog-api/
 │
 ├── src/
@@ -45,7 +46,7 @@ blog-api/
 ├── package.json
 └── README.md
 
-
+```
 ##  Setup Instructions
 
 ### 1️. Clone the repository
